@@ -75,7 +75,9 @@ import 'swiper/css/pagination';
 
 import test1 from '../assets/test1.jpg';
 import test2 from '../assets/test2.jpg';
-import test3 from '../assets/test3.jpg'; // Add as needed
+import test3 from '../assets/test3.jpg';
+import logo from '../assets/logo.jpg'
+// Add as needed
 
 const HeroSection = () => {
     useEffect(() => {
@@ -89,15 +91,17 @@ const HeroSection = () => {
                 <header className="px-4 py-16 text-right text-white bg-gradient-to-r from-pink-600 via-red-500 to-yellow-400 md:px-12 lg:px-20" dir="rtl">
                     <div className="max-w-2xl mx-auto space-y-6">
                         {/* Logo / Name */}
-                        <h1 className="text-3xl font-extrabold tracking-wide md:text-5xl animate-pulse">
-                            HASNITAMA 🌟
-                        </h1>
+                        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
+                            <div className="text-right">
+                                <h1 className="text-3xl font-extrabold md:text-5xl animate-pulse">HASNITAMA 🌟</h1>
+                                <p className="mt-2 text-lg font-light leading-relaxed md:text-xl">
+                                    التدريب الشخصي مع دعم يومي – نتائج مضمونة 💪
+                                </p>
+                            </div>
 
-                        {/* Tagline */}
-                        <p className="text-lg font-light leading-relaxed md:text-xl">
-                            التدريب الشخصي مع دعم يومي – نتائج مضمونة 💪<br />
-                            ابدئي التحوّل الجسدي بثقة وبإشراف خبير.
-                        </p>
+                            <img src={logo} alt="HASNITAMA Coach" className="w-32 h-32 border-4 border-white rounded-full shadow-md md:w-40 md:h-40" />
+                        </div>
+
 
                         {/* Call to Action */}
                         <a
