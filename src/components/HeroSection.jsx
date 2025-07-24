@@ -98,16 +98,23 @@ const HeroSection = () => {
                 <header className="px-4 py-16 text-right text-white bg-gradient-to-r from-pink-600 via-red-500 to-yellow-400 md:px-12 lg:px-20" dir="rtl">
                     <div className="max-w-2xl mx-auto space-y-6">
                         {/* Logo / Name */}
-                        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-                            <div className="text-right">
+                        <div className="flex flex-col-reverse items-center gap-6 text-right md:flex-row md:justify-between">
+                            {/* Text First on Mobile */}
+                            <div className="mt-4 md:mt-0">
                                 <h1 className="text-3xl font-extrabold md:text-5xl animate-pulse">HASNITAMA 🌟</h1>
                                 <p className="mt-2 text-lg font-light leading-relaxed md:text-xl">
                                     التدريب الشخصي مع دعم يومي – نتائج مضمونة 💪
                                 </p>
                             </div>
 
-                            <img src={logo} alt="HASNITAMA Coach" className="w-32 h-32 border-4 border-white rounded-full shadow-md md:w-40 md:h-40" />
+                            {/* Coach Photo */}
+                            <img
+                                src={logo}
+                                alt="HASNITAMA Coach"
+                                className="border-4 border-white rounded-full shadow-md w-36 h-36 md:w-40 md:h-40"
+                            />
                         </div>
+
 
 
                         {/* Call to Action */}
