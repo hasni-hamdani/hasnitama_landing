@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 
 const CountdownTimer = () => {
-    const targetDate = new Date('2025-07-24T23:00:00'); // ⏰ Fixed deadline
+    const targetDate = new Date('2025-07-25T14:00:00'); // ⏰ Fixed deadline
 
     const [timeLeft, setTimeLeft] = useState({});
 
