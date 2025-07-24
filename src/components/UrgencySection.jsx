@@ -19,7 +19,7 @@ const UrgencySection = () => {
                     data-aos="zoom-in"
                     className="inline-block w-full px-5 py-4 text-lg font-bold text-gray-900 bg-white border-2 border-red-400 shadow-md rounded-xl md:text-2xl"
                 >
-                    ⏳ ينتهي العرض خلال: <CountdownTimer hours={5} />
+                    ⏳ ينتهي العرض خلال: <CountdownTimer />
                 </div>
 
                 <p

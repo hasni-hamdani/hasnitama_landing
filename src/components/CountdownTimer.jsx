@@ -3,19 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 
 
-const CountdownTimer = ({ days = 0, hours = 0, minutes = 0 }) => {
-    const calculateTargetTime = () => {
-        const now = new Date();
-        const target = new Date(
-            now.getTime() +
-            days * 24 * 60 * 60 * 1000 +
-            hours * 60 * 60 * 1000 +
-            minutes * 60 * 1000
-        );
-        return target;
-    };
+const CountdownTimer = () => {
+    const targetDate = new Date('2025-07-24T23:00:00'); // ⏰ Fixed deadline
 
-    const [targetDate] = useState(calculateTargetTime());
     const [timeLeft, setTimeLeft] = useState({});
 
     useEffect(() => {
@@ -31,13 +21,13 @@ const CountdownTimer = ({ days = 0, hours = 0, minutes = 0 }) => {
                     seconds: Math.floor((difference / 1000) % 60),
                 });
             } else {
-                setTimeLeft(null); // Expired
+                setTimeLeft(null); // expired
             }
         };
 
         const timer = setInterval(updateCountdown, 1000);
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, []);
 
     return (
         <div className="flex flex-wrap justify-end gap-2 mt-2 text-lg font-bold text-right text-red-600" dir="rtl">
@@ -53,8 +43,7 @@ const CountdownTimer = ({ days = 0, hours = 0, minutes = 0 }) => {
             )}
         </div>
     );
-
-
 };
+;
 
 export default CountdownTimer;
