@@ -11,7 +11,7 @@ import FooterSection from './components/FooterSection';
 
 function App() {
   return (
-    <main className="font-sans bg-white min-h-screen">
+    <main className="min-h-screen font-sans bg-white">
       {/* Hero Section */}
       <HeroSection />
 
