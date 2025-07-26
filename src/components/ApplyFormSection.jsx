@@ -15,16 +15,17 @@ const ApplyFormSection = () => {
         // Replace with your actual WhatsApp number (without +)
         const phone = '213559947488';
         // const message = 'je suis intéressé.\nNom: ${name}\nInstagram: ${instagram}\nObjectif: ${goal}';
-        const message = `je suis intéressé 💪
-Nom: ${name}
-Instagram: ${instagram}
-Objectif: ${goal}`;
+        const message = `أنا مهتم 💪
+الاسم: ${name}
+إنستغرام: ${instagram}
+الهدف: ${goal}`;
 
 
 
         // Encode message for URL
         const encodedMessage = encodeURIComponent(message);
         const whatsappURL = `https://wa.me/${phone}?text=${encodedMessage}`;
+
 
         // Redirect to WhatsApp
         window.open(whatsappURL, '_blank');
