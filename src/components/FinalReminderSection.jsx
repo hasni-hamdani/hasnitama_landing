@@ -8,7 +8,7 @@ const FinalReminderSection = () => {
                     data-aos="fade-up"
                     className="mb-4 text-xl font-bold text-red-700 md:text-3xl"
                 >
-                    ⚠️ باقي 3 من أصل 5 أماكن فقط!
+                    ⚠️ باقي 6 من أصل 10 أماكن فقط!
                 </h2>
 
                 <p
