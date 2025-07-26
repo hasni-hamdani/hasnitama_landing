@@ -111,7 +111,7 @@ const HeroSection = () => {
                             <img
                                 src={logo}
                                 alt="HASNITAMA Coach"
-                                className="border-4 border-white rounded-full shadow-md w-36 h-36 md:w-40 md:h-40"
+                                className="object-cover border-4 border-white rounded-full shadow-md aspect-square w-36 md:w-40"
                             />
                         </div>
 
