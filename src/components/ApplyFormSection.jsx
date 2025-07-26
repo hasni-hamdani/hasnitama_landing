@@ -104,8 +104,9 @@ const ApplyFormSection = () => {
                             className="w-full px-4 py-3 text-right border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
                         >
                             <option value="">ما هو هدفك؟</option>
-                            <option value="gain">خسارة وزن</option>
-                            <option value="strong">زيادة الوزن</option>
+                            <option value="خسارةالوزن">خسارة وزن</option>
+                            <option value="زيادةالوزن">زيادة الوزن</option>
+                            <option value="الحفاظ على الوزن">الحفاظ على الوزن</option>
                         </select>
                     </div>
 
